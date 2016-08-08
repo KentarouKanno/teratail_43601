@@ -28,7 +28,6 @@ class LoginViewController: UIViewController {
         
         let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
         let tabBarView = mainStoryboard.instantiateInitialViewController() as! TabBarController
-        tabBarView.navigationItem.hidesBackButton = true
         self.navigationController?.pushViewController(tabBarView, animated: true)
     }
     
